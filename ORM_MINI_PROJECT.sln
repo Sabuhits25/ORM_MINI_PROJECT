@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORM_MINI_PROJECT", "ORM_MINI_PROJECT\ORM_MINI_PROJECT.csproj", "{B78B6311-8795-4F14-BCC0-D4AD25181A7C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B78B6311-8795-4F14-BCC0-D4AD25181A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78B6311-8795-4F14-BCC0-D4AD25181A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78B6311-8795-4F14-BCC0-D4AD25181A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78B6311-8795-4F14-BCC0-D4AD25181A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC36D2B6-9531-469D-9B55-A44E0BB51504}
+	EndGlobalSection
+EndGlobal
