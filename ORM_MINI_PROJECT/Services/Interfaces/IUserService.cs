@@ -1,4 +1,5 @@
-﻿using ORM_MINI_PROJECT.Models;
+﻿using ORM_MINI_PROJECT.DTO_s;
+using ORM_MINI_PROJECT.Models;
 
 namespace ORM_MINI_PROJECT.Services.Interfaces
 {

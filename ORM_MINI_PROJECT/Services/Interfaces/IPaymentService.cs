@@ -6,6 +6,7 @@ namespace ORM_MINI_PROJECT.Services.Interfaces
     {
         void MakePayment(Payment payment);
         List<Payment> GetPayments();
+        IEnumerable<object> GetPaymentsByOrderId(int orderId);
     }
 
 }

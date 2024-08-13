@@ -2,6 +2,7 @@
 using ORM_MINI_PROJECT.Exceptions;
 using ORM_MINI_PROJECT.Models;
 using ORM_MINI_PROJECT.Services.Interfaces;
+using ORM_PROJECT.DTO_s;
 
 namespace ORM_MINI_PROJECT.Services.Implementations
 {
@@ -53,7 +54,7 @@ namespace ORM_MINI_PROJECT.Services.Implementations
             if (detail.Quantity <= 0 || detail.Price < 0)
                 throw new InvalidOrderDetailException("Məhsulun miqdarı sıfırdan az və ya qiyməti mənfi ola bilməz.");
 
-            order.Details.Add(detail);
+            order.OrderDetails.Add(detail);
         }
 
         public List<OrderDetail> GetOrderDetailsByOrderId(int orderId)
@@ -62,7 +63,17 @@ namespace ORM_MINI_PROJECT.Services.Implementations
             if (order == null)
                 throw new OrderNotFoundException("Verilmiş ID ilə sifariş tapılmadı.");
 
-            return order.Details;
+            return order.OrderDetails.ToList();
+        }
+
+        public void CreateOrder(OrderDTO orderDto)
+        {
+            
+        }
+
+        public IEnumerable<object> GetOrdersByUserId(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

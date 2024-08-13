@@ -1,4 +1,5 @@
-﻿using ORM_MINI_PROJECT.Exceptions;
+﻿using ORM_MINI_PROJECT.DTO_s;
+using ORM_MINI_PROJECT.Exceptions;
 using ORM_MINI_PROJECT.Models;
 using ORM_MINI_PROJECT.Services.Interfaces;
 
@@ -52,6 +53,16 @@ namespace ORM_MINI_PROJECT.Services.Implementation
                 throw new NotFoundException("Məhsul tapılmadı.");
 
             return product;
+        }
+
+        public void AddProduct(ProductDTO productDTO)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateProduct(ProductDTO productDTO)
+        {
+            throw new NotImplementedException();
         }
     }
 }

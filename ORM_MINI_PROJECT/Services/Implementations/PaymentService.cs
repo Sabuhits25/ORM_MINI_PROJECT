@@ -27,5 +27,10 @@ namespace ORM_MINI_PROJECT.Services.Implementations
         {
             return _payments;
         }
+
+        public IEnumerable<object> GetPaymentsByOrderId(int orderId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
