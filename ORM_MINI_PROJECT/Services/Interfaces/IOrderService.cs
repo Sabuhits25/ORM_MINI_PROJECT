@@ -1,4 +1,5 @@
-﻿using ORM_MINI_PROJECT.Models;
+﻿using ORM_MINI_PROJECT.Enum;
+using ORM_MINI_PROJECT.Models;
 using ORM_PROJECT.DTO_s;
 
 namespace ORM_MINI_PROJECT.Services.Interfaces
@@ -12,6 +13,9 @@ namespace ORM_MINI_PROJECT.Services.Interfaces
         void AddOrderDetail(int orderId, OrderDetail detail);
         List<OrderDetail> GetOrderDetailsByOrderId(int orderId);
         void CreateOrder(OrderDTO orderDto);
-        IEnumerable<object> GetOrdersByUserId(int id);
+        Task<List<OrderDTO>> GetOrdersByUserId(int id);
+        void DeleteOrder(int id);
+        //void UpdateOrderStatus(int id, OrderStatus status);
+        void UpdateOrderStatus(int id, string? status);
     }
 }

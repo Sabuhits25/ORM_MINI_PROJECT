@@ -1,4 +1,5 @@
-﻿using ORM_MINI_PROJECT.Enum;
+﻿using ORM_MINI_PROJECT.DTO_s;
+using ORM_MINI_PROJECT.Enum;
 using ORM_MINI_PROJECT.Exceptions;
 using ORM_MINI_PROJECT.Models;
 using ORM_MINI_PROJECT.Services.Interfaces;
@@ -29,6 +30,11 @@ namespace ORM_MINI_PROJECT.Services.Implementations
         }
 
         public IEnumerable<object> GetPaymentsByOrderId(int orderId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddPayment(PaymentDTO paymentDTO)
         {
             throw new NotImplementedException();
         }

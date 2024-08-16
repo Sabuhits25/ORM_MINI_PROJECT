@@ -26,9 +26,9 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         _context.Set<T>().Remove(entity);
     }
 
-    public async Task<List<T>> GetAllAsync(params string[] includes) //"Author" ,"Sales.Customer"
+    public async Task<List<T>> GetAllAsync(params string[] includes) 
     {
-        var query = _context.Set<T>().AsQueryable(); //Select*from Books join Author
+        var query = _context.Set<T>().AsQueryable();
 
 
         foreach (var include in includes)

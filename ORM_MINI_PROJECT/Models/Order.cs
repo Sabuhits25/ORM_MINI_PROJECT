@@ -13,5 +13,6 @@ namespace ORM_MINI_PROJECT.Models
         public OrderStatus Status { get; set; }
         [NotMapped]
         public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+       
     }
 }
